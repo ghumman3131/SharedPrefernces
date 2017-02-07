@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585454"
+
+    android:padding="20dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALREADY HAVE AN ACCOUNT ?"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/alreadyAccountid"
+        android:layout_marginTop="150dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alreadyAccountid"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/user_name_lay_id">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"
+            android:tint="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter user name"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#94ffffff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/first_view"
+        android:layout_below="@+id/user_name_lay_id"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_view"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/password_lay_id">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/passwordicon"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter password"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#94ffffff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/second_view"
+        android:layout_below="@+id/password_lay_id"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_view"
+        android:layout_marginTop="20dp"
+        android:id="@+id/remember_me_lay"
+
+
+        >
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="#fff"
+            android:id="@+id/checkBox_id"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REMEBER ME"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/checkBox_id"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FORGOT PASSWORD ? RESET"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remember_me_lay"
+        android:background="#36dcce"
+        android:text="LOGIN"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:onClick="login"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
